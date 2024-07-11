@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Playwrite+DK+Uloopet:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite DK Uloopet", cursive;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.entrance,
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  background-image: linear-gradient(#eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  height: 100vh;
+}
+.title {
+  font-size: 48px;
+  color: #fdd528;
+}
+.entrance_btn button,
+.reset {
+  border: 1px solid #fdd528;
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+  color: #fdd528;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.coin {
+  width: 250px;
+}
+
+/*! GAME SECTION */
+.game {
+  display: none;
+}
+.coin_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 12px;
+  padding: 30px;
+  width: 500px;
+}
+.coin_img {
+  width: 150px;
+  animation: flipCoin 1s forwards;
+}
+.start_img {
+  width: 200px;
+}
+.coin_score {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+}
+.coin_score_btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.coin_btn {
+  width: 50px;
+  cursor: pointer;
+}
+.reset {
+  padding: 0 15px;
+  border-radius: 50%;
+}
+@keyframes flipCoin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}

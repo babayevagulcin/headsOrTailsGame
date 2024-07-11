@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Heads or Tails</title>
+  </head>
+  <body>
+    <section class="entrance">
+      <h1 class="title">Heads or Tails Game</h1>
+      <div class="entrance_btn">
+        <button class="start">start game</button>
+        <button class="exit">exit game</button>
+      </div>
+      <div class="coin">
+        <img src="./img/coinrab.png" alt="" />
+      </div>
+    </section>
+    <section class="game">
+      <div class="coin_card">
+        <div class="coin_img">
+          <img src="./img/coins.png" alt="" id="coinImg" />
+        </div>
+        <div class="coin_score_btn">
+          <div class="coin_btn">
+            <img src="./img/coin.png" alt="" id="coin" />
+          </div>
+          <div class="reset_btn">
+            <button class="reset" id="resetBtn">R</button>
+          </div>
+        </div>
+        <div class="coin_score">
+          <div class="head_score">
+            <p>heads: <span id="headScore">0</span></p>
+          </div>
+          <div class="tail_score">
+            <p>tails: <span id="tailScore">0</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./variables.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
